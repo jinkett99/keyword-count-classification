@@ -1,0 +1,62 @@
+2024-09-03 15:35:22,432 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-03 15:36:34,675 - config - INFO - Loading dataset from /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/raw/soe22_dc.sas7bdat
+2024-09-03 15:53:57,443 - config - INFO - Loading dataset from /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/raw/soe22_dc.sas7bdat
+2024-09-03 15:54:57,594 - config - INFO - Loading dataset from /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/raw/soe22_dc.sas7bdat
+2024-09-03 15:55:05,500 - config - INFO - Loading dataset from /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/raw/soe22_dc.sas7bdat
+2024-09-03 15:56:38,701 - config - INFO - Loading dataset from /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/raw/soe22_dc.sas7bdat
+2024-09-03 15:57:00,197 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-03 15:57:01,564 - config - INFO - Loading dataset from /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/raw/soe22_dc.sas7bdat
+2024-09-03 15:57:01,758 - config - INFO - Saving processed dataset to /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/processed/soe2022_labelled.csv
+2024-09-03 16:23:17,227 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-03 16:23:17,840 - config - INFO - Loading SAS file from /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/raw/soe22_dc.sas7bdat
+2024-09-03 16:23:26,455 - config - INFO - Loading SAS file from /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/raw/soe22_dc.sas7bdat
+2024-09-03 16:24:14,546 - config - INFO - Loading SAS file from /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/raw/soe22_dc.sas7bdat
+2024-09-03 16:27:27,060 - config - INFO - Loading SAS file from /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/raw/soe22_dc.sas7bdat
+2024-09-03 16:28:30,417 - config - INFO - Loading SAS file from /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/raw/soe22_dc.sas7bdat
+2024-09-03 18:25:59,259 - config - INFO - Loading dataset from /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/raw/soe22_dc.sas7bdat
+2024-09-03 18:25:59,508 - config - INFO - Saving processed dataset to /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/processed/soe2022_labelled.csv
+2024-09-03 18:26:53,372 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-03 18:26:53,414 - config - INFO - Loading dataset from /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/raw/soe22_dc.sas7bdat
+2024-09-03 18:26:53,593 - config - INFO - Saving processed dataset to /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/processed/soe2022_labelled.csv
+2024-09-03 18:36:00,150 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-03 18:55:45,800 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-04 10:54:31,078 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-04 10:56:06,866 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-04 14:09:39,877 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-04 14:10:13,967 - config - INFO - Loading SAS file from /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/raw/soe22_dc.sas7bdat
+2024-09-04 16:59:18,957 - config - INFO - Loading dataset from /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/raw/soe22_dc.sas7bdat
+2024-09-04 16:59:19,137 - config - INFO - Saving processed dataset to /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/processed/soe2022_labelledv1.csv
+2024-09-05 15:14:18,029 - ipykernel.comm - ERROR - No such comm target registered: jupyter.widget.control
+2024-09-05 15:14:18,041 - Comm - WARNING - No such comm: d02a63c7-455b-4586-935f-aeb449afa388
+2024-09-05 15:37:44,988 - config - INFO - Loading dataset from /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/raw/soe22_dc.sas7bdat
+2024-09-05 15:37:45,261 - config - INFO - Saving processed dataset to /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/processed/soe2022_labelledv1.csv
+2024-09-05 15:49:16,621 - config - INFO - Loading SAS file from /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/raw/soe22_dc.sas7bdat
+2024-09-05 15:50:25,510 - config - INFO - Loading SAS file from /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/raw/soe22_dc.sas7bdat
+2024-09-05 16:12:35,549 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-05 16:13:42,014 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-05 16:42:45,373 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-05 16:45:02,707 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-06 10:47:31,954 - ipykernel.comm - ERROR - No such comm target registered: jupyter.widget.control
+2024-09-06 10:47:31,966 - Comm - WARNING - No such comm: dd869baf-fd15-46ef-b2d4-87ca8a407206
+2024-09-06 14:05:42,125 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-06 15:54:42,052 - ipykernel.comm - ERROR - No such comm target registered: jupyter.widget.control
+2024-09-06 15:54:42,058 - Comm - WARNING - No such comm: 153b18f0-60fd-4c25-94cf-43aab1a7400e
+2024-09-06 15:56:57,152 - ipykernel.comm - ERROR - No such comm target registered: jupyter.widget.control
+2024-09-06 15:56:57,156 - Comm - WARNING - No such comm: 0a25c2a6-3d03-447a-86f6-e7d5acf84818
+2024-09-10 09:57:00,768 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-10 09:57:12,863 - config - INFO - Loading dataset from /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/raw/soe22_dc.sas7bdat
+2024-09-10 09:57:13,186 - config - INFO - Saving processed dataset to /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project/data/processed/soe2022_labelledv1.csv
+2024-09-10 11:01:27,497 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-10 11:49:22,543 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-10 14:32:01,383 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-10 14:51:40,766 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-10 15:01:12,264 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-10 15:50:04,126 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-10 16:12:06,155 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-11 11:17:52,224 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-11 11:20:14,039 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-11 11:51:09,503 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-09-11 16:08:51,876 - ipykernel.comm - ERROR - No such comm target registered: jupyter.widget.control
+2024-09-11 16:08:51,887 - Comm - WARNING - No such comm: 386dbcf3-6280-4a43-8b50-d99881d8d329
+2024-09-20 11:05:16,140 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
+2024-10-03 11:08:33,628 - config - INFO - PROJ_ROOT path is: /nas-p1/dosfs/BSD/FLAD/End_User/JKYEE/IE2023/IE_project
