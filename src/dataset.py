@@ -33,11 +33,11 @@ def process_dataset(input_filename, output_filename):
     df, meta = pyreadstat.read_sas7bdat(input_path)
 
     # Keep only the specified columns
-    columns_to_keep = ['UEN', 'ONLINE_PRESENCE_IND', 'CORPORATE_URL_IND', 'ECOM_REV', 'ECOM_REV_IND']
+    columns_to_keep = ['UEN', 'HIRING_IND', 'CORPORATE_URL_IND', 'ECOM_REV', 'ECOM_REV_IND']
     df = df[columns_to_keep]
 
-    # Filter records where ONLINE_PRESENCE_IND is 1
-    df = df[df['ONLINE_PRESENCE_IND'] == 1]
+    # Filter records where HIRING_IND is 1
+    df = df[df['HIRING_IND'] == 1]
 
     # Generate the new column 'TRUE_IE'
     df['TRUE_IE'] = df.apply(
@@ -73,15 +73,15 @@ def find_unmatched(df, col1, col2, output_csv):
 def imputation_v1(out2022, out2023):
     
     # import datasets
-    soe_path = PROCESSED_DATA_DIR / 'soe2022_labelled.csv'
+    abc_path = PROCESSED_DATA_DIR / 'abc2022_labelled.csv'
     df2022_path = RAW_DATA_DIR / 'ie2022.csv'
     df2023_path = RAW_DATA_DIR / 'ie2023.csv'
-    soe_df = pd.read_csv(soe_path)
+    abc_df = pd.read_csv(abc_path)
     df2022 = pd.read_csv(df2022_path)
     df2023 = pd.read_csv(df2023_path)
     
-    # Create a dictionary from soe_df for quick lookup
-    uen_to_true_ie = dict(zip(soe_df['UEN'], soe_df['TRUE_IE']))
+    # Create a dictionary from abc_df for quick lookup
+    uen_to_true_ie = dict(zip(abc_df['UEN'], abc_df['TRUE_IE']))
     
     # Function to impute 'FINAL_IE' based on 'UEN'
     def impute(row):
@@ -106,7 +106,7 @@ def create_train_test_sets():
     Create training and test sets by merging with keyword_2022 on 'UEN'.
 
     Parameters:
-    soe_data (pd.DataFrame): Source data for training set
+    abc_data (pd.DataFrame): Source data for training set
     ie2022 (pd.DataFrame): Source data for test set (part 1)
     ie2023 (pd.DataFrame): Source data for test set (part 2)
     keyword_2022 (pd.DataFrame): Data to be merged with on 'UEN'
@@ -116,13 +116,13 @@ def create_train_test_sets():
     test_set (pd.DataFrame): Resulting test set
     """
     # Get paths
-    soe_path = PROCESSED_DATA_DIR / 'soe2022_labelledv1.csv'
+    abc_path = PROCESSED_DATA_DIR / 'abc2022_labelledv1.csv'
     test2022_path = RAW_DATA_DIR / 'ie2022.csv'
     keyword2022_path = RAW_DATA_DIR / 'IE2022_keywords170k.csv'
     keyword2023_path = RAW_DATA_DIR / 'IE2023_keywords200k.csv'
     
     # import dataframes
-    soe_data = pd.read_csv(soe_path)
+    abc_data = pd.read_csv(abc_path)
     ie2022 = pd.read_csv(test2022_path)
     keyword_2022 = pd.read_csv(keyword2022_path)
     keyword_2023 = pd.read_csv(keyword2023_path)
@@ -130,14 +130,14 @@ def create_train_test_sets():
     # Subset 'UEN' and merge for train set
     # Train set expanded by first merging with keyword2022, then keyword2023 (remaining records)
     # First merge with keyword_2022
-    soe_data = soe_data[['UEN', 'TRUE_IE']]
-    merged_2022 = pd.merge(soe_data, keyword_2022, on='UEN', how='inner')
+    abc_data = abc_data[['UEN', 'TRUE_IE']]
+    merged_2022 = pd.merge(abc_data, keyword_2022, on='UEN', how='inner')
 
-    # Find remaining records in soe_data that were not merged
-    remaining_soe_data = soe_data[~soe_data['UEN'].isin(merged_2022['UEN'])]
+    # Find remaining records in abc_data that were not merged
+    remaining_abc_data = abc_data[~abc_data['UEN'].isin(merged_2022['UEN'])]
 
     # Merge remaining records with keyword_2023
-    merged_2023 = pd.merge(remaining_soe_data, keyword_2023, on='UEN', how='inner')
+    merged_2023 = pd.merge(remaining_abc_data, keyword_2023, on='UEN', how='inner')
 
     # Concatenate both results
     train_set = pd.concat([merged_2022, merged_2023], ignore_index=True)
@@ -194,35 +194,6 @@ def merge_inference_with_indicators():
     df.to_csv(output_path, index=False)
     
     return df
-
-# def main():
-#     parser = argparse.ArgumentParser(description='Data processing script.')
-#     subparsers = parser.add_subparsers(dest='command', help='Sub-command help')
-
-#     # Sub-parser for the load_data function
-#     parser_load = subparsers.add_parser('load', help='Load data from a file')
-#     parser_load.add_argument('input_filename', type=str, help='The input filename')
-
-#     # Sub-parser for the save_data function
-#     parser_save = subparsers.add_parser('save', help='Save data to a file')
-#     parser_save.add_argument('input_filename', type=str, help='The input filename')
-#     parser_save.add_argument('output_filename', type=str, help='The output filename')
-
-#     # Sub-parser for the process_dataset function
-#     parser_process = subparsers.add_parser('process', help='Process a dataset')
-#     parser_process.add_argument('input_filename', type=str, help='The input filename')
-#     parser_process.add_argument('output_filename', type=str, help='The output filename')
-    
-#     args = parser.parse_args()
-    
-#     if args.command == 'load':
-#         df = load_data(args.input_filename)
-#         print(df.head())  # Print the first few rows to verify the load operation
-#     elif args.command == 'save':
-#         df = load_data(args.input_filename)
-#         save_data(df, args.output_filename)
-#     elif args.command == 'process':
-#         process_dataset(args.input_filename, args.output_filename)
 
 if __name__ == "__main__":
     main()
